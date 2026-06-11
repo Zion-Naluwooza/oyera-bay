@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyera Bay Service - Dashboard</title>
+</head>
+<style>
+    *,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(211, 231, 255);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-container, .table-section {
+        background-color: white;
+        margin: 20px 50px;
+        padding: 12px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #quick-access-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #cards-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #cards-section section {
+        padding: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        border-radius: 8px;
+    }
+
+    .card-title {
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+
+    .sub-title {
+        color: grey;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    #table-btn {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+        background-color: rgb(0, 63, 131);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .icon{
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 8px;
+    }
+
+    .more {
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div id="quick-access-section">
+                <h3>Quick Access</h3>
+                <p class="more">...</p>
+            </div>
+            <div id="cards-section">
+                <section>
+                    <p class="card-title">No. of Technicians</p>
+                    <p class="sub-title"><span>230 tech .</span> 10 online</p>
+                </section>
+                <section>
+                    <p class="card-title">No. of Cars in Garage</p>
+                    <p class="sub-title"><span>10 cars</span></p>
+                </section>
+                <section>
+                    <p class="card-title">No. of Customers</p>
+                    <p class="sub-title">100 customers</p>
+                </section>
+                <section>
+                    <p class="card-title">Inventory</p>
+                    <p class="sub-title"><span>10 spare parts</span></p>
+                </section>
+            </div>
+        </div>
+        <div class="table-section">
+            <h3>Customer Information</h3>
+            <div id="table-btn">
+                <button type="button"><span class="icon">+</span> Add New Customer</button>
+            </div>
+    
+            <table>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Plate Number</th>
+                    <th>Service Required</th>
+                </tr>
+                <tr>
+                    <td>Alfred Ssebandeke</td>
+                    <td>UAX 333D</td>
+                    <td>Wheel alignment</td>
+                </tr>
+                <tr>
+                    <td>Ivan Mwesigwa</td>
+                    <td>UA 7777T</td>
+                    <td>Balance</td>
+                </tr>
+                <tr>
+                    <td>Ernst Mulinde</td>
+                    <td>UAZ 890P</td>
+                    <td>Minor repairs</td>
+                </tr>
+                <tr>
+                    <td>Sheila Malinga</td>
+                    <td>UA 6667P</td>
+                    <td>Brake fliud</td>
+                </tr>
+                <tr>
+                    <td>Stella Nantumbwe</td>
+                    <td>UAZ 754L</td>
+                    <td>Greasing</td>
+                </tr>
+                <tr>
+                    <td>Marggaret Tusiima</td>
+                    <td>UAW 333U</td>
+                    <td>Blake pads change</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
